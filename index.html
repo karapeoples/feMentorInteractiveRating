@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Rating Component by Kara Peoples</title>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
   <!-- Rating state start -->
+  <main class="rating-state-main">
+    <div class="star-img-container">
+      <img src="./images/icon-star.svg" alt="image of star" class="star-image"/>
+    </div>
+    <h1 class="title">How did we do?</h1>
 
-  How did we do?
+    <p class="note">Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!</p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <section class="rating">
+      <span class="number" id="one">1</span><span class="number" id="two">2</span><span class="number" id="three">3</span><span
+        class="number" id="four">4</span><span class="number" id="five">5</span>
+    </section>
 
-  1 2 3 4 5
-
-  Submit
-
+    <br />
+    <button class="submit-btn">Submit</button>
+  </main>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
+  <main class="thank-you-state-main">
+    <div class="img-container">
+      <img src="./images/illustration-thank-you.svg" alt="phone with banners" class="image">
+    </div>
+    <div class="announcement">You selected <!-- Add rating here --> out of 5</div>
 
-  You selected <!-- Add rating here --> out of 5
+    <h1 class="title">Thank you!</h1>
 
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+    <p class="note">We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+  </main>
   <!-- Thank you state end -->
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kara R. Peoples</a>.
   </div>
 </body>
+
 </html>
