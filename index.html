@@ -15,9 +15,9 @@
 </head>
 
 <body>
-
+<section id="body-container">
   <!-- Rating state start -->
-  <main class="rating-state-main">
+  <main id="rating-state-main">
     <div class="star-img-container">
       <img src="./images/icon-star.svg" alt="image of star" class="star-image" />
     </div>
@@ -26,9 +26,9 @@
     <p class="note">Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
 
-    <section class="rating" onclick="chooseStar()">
-      <span id="one">1</span><span id="two">2</span><span
-        id="three" >3</span><span id="four">4</span><span  id="five">5</span>
+    <section class="rating">
+      <span id="one" onclick="chooseStarOne()">1</span><span id="two" onclick="chooseStarTwo()">2</span><span
+        id="three" onclick="chooseStarThree()" >3</span><span id="four" onclick="chooseStarFour()">4</span><span id="five" onclick="chooseStarFive()">5</span>
     </section>
 
     <br />
@@ -37,11 +37,12 @@
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <main class="thank-you-state-main">
+  
+  <main id="thank-you-state-main">
     <div class="img-container">
       <img src="./images/illustration-thank-you.svg" alt="phone with banners" class="image">
     </div>
-    <div id="announcement"></div>
+    <button id="announcement"></button>
 
     <h1 class="title">Thank you!</h1>
 
@@ -55,6 +56,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/karapeoples" target="_blank">Kara R. Peoples</a>.
   </div>
+</section>
 </body>
 <script src="interactive.js"></script>
 </html>
