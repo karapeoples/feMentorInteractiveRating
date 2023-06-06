@@ -4,4 +4,4 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 Built with Vanilla HTML, CSS, JS
 
-Live Site:
+[Live Site](https://fe-interactive-rating-component.netlify.app/)
