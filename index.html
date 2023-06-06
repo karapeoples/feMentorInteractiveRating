@@ -19,20 +19,20 @@
   <!-- Rating state start -->
   <main class="rating-state-main">
     <div class="star-img-container">
-      <img src="./images/icon-star.svg" alt="image of star" class="star-image"/>
+      <img src="./images/icon-star.svg" alt="image of star" class="star-image" />
     </div>
     <h1 class="title">How did we do?</h1>
 
     <p class="note">Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
 
-    <section class="rating">
-      <span class="number" id="one">1</span><span class="number" id="two">2</span><span class="number" id="three">3</span><span
-        class="number" id="four">4</span><span class="number" id="five">5</span>
+    <section class="rating" onclick="chooseStar()">
+      <span id="one">1</span><span id="two">2</span><span
+        id="three" >3</span><span id="four">4</span><span  id="five">5</span>
     </section>
 
     <br />
-    <button class="submit-btn">Submit</button>
+    <button class="submit-btn" onclick="onClick()">Submit</button>
   </main>
   <!-- Rating state end -->
 
@@ -41,7 +41,7 @@
     <div class="img-container">
       <img src="./images/illustration-thank-you.svg" alt="phone with banners" class="image">
     </div>
-    <div class="announcement">You selected <!-- Add rating here --> out of 5</div>
+    <div id="announcement"></div>
 
     <h1 class="title">Thank you!</h1>
 
@@ -53,8 +53,8 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Kara R. Peoples</a>.
+    Coded by <a href="https://github.com/karapeoples" target="_blank">Kara R. Peoples</a>.
   </div>
 </body>
-
+<script src="interactive.js"></script>
 </html>
